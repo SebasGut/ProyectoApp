@@ -26,6 +26,10 @@ const SingInScreen = () => {
     navigation.navigate('AdminLogIn');
   };
 
+  const openScanner = () => {
+    navigation.navigate('QrScreen');
+  };
+
   return (
     <View style={styles.root}>
       <Image
@@ -45,6 +49,7 @@ const SingInScreen = () => {
       />
       <CustomButton text="Iniciar Sesión" onPress={onSignInPressed} />
       <CustomButton text={'Admin'} onPress={Admin} />
+      <CustomButton text={'Scanner'} onPress={openScanner} />
     </View>
   );
 };
