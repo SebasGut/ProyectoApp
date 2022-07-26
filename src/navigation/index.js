@@ -8,14 +8,16 @@ import PointScreen from '../screens/PointsScreen/PointScreen';
 import AdminScreen from '../screens/AdminScreen/AdminScreen';
 import EventScreen from '../screens/EventScreen/EventScreen';
 import AdminLogIn from '../screens/AdminLogIn/AdminLogIn';
+import QrScreen from '../screens/QrScreen/QrScreen';
 
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown:false}}>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="SignIn" component={SingInScreen} />
+        <Stack.Screen name="QrScreen" component={QrScreen} />
         <Stack.Screen name="PointScreen" component={PointScreen} />
         <Stack.Screen name="EventScreen" component={EventScreen} />
         <Stack.Screen name="AdminScreen" component={AdminScreen} />

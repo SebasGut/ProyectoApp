@@ -9,8 +9,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
 import Navigation from './src/navigation';
-import QrScreen from './src/screens/QrScreen/QrScreen';
-
 
 const App = () => {
   const Sig = () => {
@@ -19,7 +17,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.root}>
-      <Navigation/>
+      <Navigation />
     </SafeAreaView>
   );
 };
