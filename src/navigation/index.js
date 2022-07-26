@@ -22,14 +22,10 @@ const Navigation = () => {
           options={{headerShown: false}}
         />
         <Stack.Screen name="Registrar QR" component={QrScreen} />
-        <Stack.Screen name="Horas" component={PointScreen} />
+        <Stack.Screen name="Horas" component={PointScreen} options={{headerShown: false}}/>
         <Stack.Screen name="Eventos" component={EventScreen} />
         <Stack.Screen name="AdminScreen" component={AdminScreen} />
-        <Stack.Screen
-          name="AdminLogIn"
-          component={AdminLogIn}
-          options={{headerShown: false}}
-        />
+        <Stack.Screen name="AdminLogIn" component={AdminLogIn} />
       </Stack.Navigator>
     </NavigationContainer>
   );
