@@ -15,13 +15,21 @@ const Stack = createNativeStackNavigator();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="SignIn" component={SingInScreen} />
-        <Stack.Screen name="QrScreen" component={QrScreen} />
-        <Stack.Screen name="PointScreen" component={PointScreen} />
-        <Stack.Screen name="EventScreen" component={EventScreen} />
+      <Stack.Navigator>
+        <Stack.Screen
+          name="SignIn"
+          component={SingInScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen name="Registrar QR" component={QrScreen} />
+        <Stack.Screen name="Horas" component={PointScreen} />
+        <Stack.Screen name="Eventos" component={EventScreen} />
         <Stack.Screen name="AdminScreen" component={AdminScreen} />
-        <Stack.Screen name="AdminLogIn" component={AdminLogIn} />
+        <Stack.Screen
+          name="AdminLogIn"
+          component={AdminLogIn}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -7,10 +7,10 @@ const PointScreen = () => {
   const navigation = useNavigation();
 
   const Evento = () => {
-    navigation.navigate('EventScreen');
+    navigation.navigate('Eventos');
   };
-  const Registrar = () => {
-    console.warn('Registrar Evento');
+  const openScanner = () => {
+    navigation.navigate('Registrar QR');
   };
 
   return (
@@ -18,7 +18,7 @@ const PointScreen = () => {
       <Text style={styles.title}>Tus Horas a dia de hoy son:</Text>
       <Text style={styles.puntos}>xxxx Horas</Text>
       <CustomButton text="Evento" onPress={Evento} />
-      <CustomButton text="Resgistrar Evento" onPress={Registrar} />
+      <CustomButton text="Resgistrar Evento" onPress={openScanner} />
     </View>
   );
 };

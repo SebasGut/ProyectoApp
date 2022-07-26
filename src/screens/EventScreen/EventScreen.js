@@ -1,8 +1,14 @@
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
 import CustomButton from '../../components/CustomButton/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const EventScreen = () => {
+  const navigation = useNavigation();
+  const openScanner = () => {
+    navigation.navigate('Registrar QR');
+  };
+
   return (
     <View style={styles.root}>
       <Text style={styles.title}>Evento en curso</Text>
@@ -10,7 +16,7 @@ const EventScreen = () => {
       <Text style={styles.reg}>Estatus</Text>
       <Text style={styles.text}>Salida</Text>
       <Text style={styles.reg}>Estatus</Text>
-      <CustomButton text="Registrar" />
+      <CustomButton text="Registrar" onPress={openScanner} />
     </View>
   );
 };

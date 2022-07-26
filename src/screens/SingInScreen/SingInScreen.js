@@ -20,14 +20,10 @@ const SingInScreen = () => {
   const navigation = useNavigation();
 
   const onSignInPressed = () => {
-    navigation.navigate('PointScreen');
+    navigation.navigate('Horas');
   };
   const Admin = () => {
     navigation.navigate('AdminLogIn');
-  };
-
-  const openScanner = () => {
-    navigation.navigate('QrScreen');
   };
 
   return (
@@ -49,7 +45,6 @@ const SingInScreen = () => {
       />
       <CustomButton text="Iniciar Sesión" onPress={onSignInPressed} />
       <CustomButton text={'Admin'} onPress={Admin} />
-      <CustomButton text={'Scanner'} onPress={openScanner} />
     </View>
   );
 };
