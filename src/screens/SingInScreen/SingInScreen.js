@@ -26,6 +26,10 @@ const SingInScreen = () => {
     navigation.navigate('AdminLogIn');
   };
 
+  const Reg = () => {
+    navigation.navigate('Registro');
+  };
+
   return (
     <View style={styles.root}>
       <Image
@@ -42,9 +46,11 @@ const SingInScreen = () => {
         placeholder="dd/mm/aaaa"
         value={password}
         setValue={setPassword}
+        secureTextEntry={true}
       />
       <CustomButton text="Iniciar Sesión" onPress={onSignInPressed} />
-      <CustomButton text={'Admin'} onPress={Admin} />
+      <CustomButton text="Registrarce" onPress={Reg} />
+      <CustomButton text="Admin" onPress={Admin} />
     </View>
   );
 };

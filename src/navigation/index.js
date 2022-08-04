@@ -9,6 +9,7 @@ import AdminScreen from '../screens/AdminScreen/AdminScreen';
 import EventScreen from '../screens/EventScreen/EventScreen';
 import AdminLogIn from '../screens/AdminLogIn/AdminLogIn';
 import QrScreen from '../screens/QrScreen/QrScreen';
+import SingUpScreen from '../screens/SingUpScreen/SingUpScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,10 +23,15 @@ const Navigation = () => {
           options={{headerShown: false}}
         />
         <Stack.Screen name="Registrar QR" component={QrScreen} />
-        <Stack.Screen name="Horas" component={PointScreen} options={{headerShown: false}}/>
+        <Stack.Screen
+          name="Horas"
+          component={PointScreen}
+          options={{headerShown: false}}
+        />
         <Stack.Screen name="Eventos" component={EventScreen} />
         <Stack.Screen name="AdminScreen" component={AdminScreen} />
         <Stack.Screen name="AdminLogIn" component={AdminLogIn} />
+        <Stack.Screen name="Registro" component={SingUpScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
