@@ -10,6 +10,11 @@ import EventScreen from '../screens/EventScreen/EventScreen';
 import AdminLogIn from '../screens/AdminLogIn/AdminLogIn';
 import QrScreen from '../screens/QrScreen/QrScreen';
 import SingUpScreen from '../screens/SingUpScreen/SingUpScreen';
+import AlumnoScreen from '../screens/AlumnoScreeen/AlumnoScreen';
+import ExalumnoScreen from '../screens/ExlumnoScreen/ExalumnoScreen';
+import ComunidadUNAM from '../screens/ComunidadUnam/ComunidadUnam';
+import ExternoScreen from '../screens/ExternoScreen/ExternoScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +37,10 @@ const Navigation = () => {
         <Stack.Screen name="AdminScreen" component={AdminScreen} />
         <Stack.Screen name="AdminLogIn" component={AdminLogIn} />
         <Stack.Screen name="Registro" component={SingUpScreen} />
+        <Stack.Screen name="Alumno" component={AlumnoScreen} />
+        <Stack.Screen name="Exalumno" component={ExalumnoScreen} />
+        <Stack.Screen name="Comunidad UNAM" component={ComunidadUNAM} />
+        <Stack.Screen name="Externo" component={ExternoScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
