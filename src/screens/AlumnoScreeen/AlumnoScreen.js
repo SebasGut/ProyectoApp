@@ -256,7 +256,6 @@ const DROPDOWN_OPTIONS_SEMESTRE = [
 const AlumnoScreen = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [nombre, setNombre] = useState('');
   const [apellido1, setApellido1] = useState('');
   const [apellido2, setApellido2] = useState('');
@@ -301,11 +300,6 @@ const AlumnoScreen = () => {
           placeholder="Contraseña"
           value={password}
           setValue={setPassword}
-        />
-        <CustomImput
-          placeholder="Repita contraseña"
-          value={confirmPassword}
-          setValue={setConfirmPassword}
         />
         <CustomButton text="Siguiente" />
       </View>

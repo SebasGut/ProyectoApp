@@ -14,6 +14,7 @@ import AlumnoScreen from '../screens/AlumnoScreeen/AlumnoScreen';
 import ExalumnoScreen from '../screens/ExlumnoScreen/ExalumnoScreen';
 import ComunidadUNAM from '../screens/ComunidadUnam/ComunidadUnam';
 import ExternoScreen from '../screens/ExternoScreen/ExternoScreen';
+import UserManag from '../screens/UserManag/UserManag';
 
 
 const Stack = createNativeStackNavigator();
@@ -41,6 +42,7 @@ const Navigation = () => {
         <Stack.Screen name="Exalumno" component={ExalumnoScreen} />
         <Stack.Screen name="Comunidad UNAM" component={ComunidadUNAM} />
         <Stack.Screen name="Externo" component={ExternoScreen} />
+        <Stack.Screen name="Usuarios" component= {UserManag} />
       </Stack.Navigator>
     </NavigationContainer>
   );
